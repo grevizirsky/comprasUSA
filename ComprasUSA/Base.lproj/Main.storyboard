@@ -35,7 +35,7 @@
                                 <rect key="frame" x="132" y="160.66666666666666" width="218" height="48"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-mi-59k">
                                 <rect key="frame" x="40" y="461.66666666666669" width="328" height="39"/>
@@ -82,6 +82,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Compras" image="bag" id="KCX-yg-jTQ"/>
+                    <connections>
+                        <outlet property="lbReal" destination="NEb-mi-59k" id="br6-nW-fAR"/>
+                        <outlet property="lbRealDescription" destination="ahC-ph-fMO" id="EEk-dz-mqc"/>
+                        <outlet property="tfDolar" destination="5Ec-hh-aNO" id="AML-tI-vuh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +121,7 @@
                                                 <color key="backgroundColor" red="1" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.67450980392156867" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -134,7 +139,7 @@
                                                 <color key="backgroundColor" red="0.77647058823529413" green="0.94901960784313721" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.0" green="0.50980392156862742" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -152,7 +157,7 @@
                                                 <color key="backgroundColor" red="0.88235294117647056" green="0.96862745098039216" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="textColor" red="0.0" green="0.023529411764705882" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -172,6 +177,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Configurações" image="settings" id="0qi-Rd-UD7"/>
+                    <connections>
+                        <outlet property="tfDolar" destination="g0p-9x-nKN" id="YZE-ZW-8QX"/>
+                        <outlet property="tfIOF" destination="xDc-vB-E8F" id="9ZH-Ny-ikx"/>
+                        <outlet property="tfStateTaxes" destination="eqf-fJ-C9Z" id="Pnh-bL-dst"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EHz-9t-hwk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,6 +295,15 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Impostos" image="taxes" id="fF8-dB-yss"/>
+                    <connections>
+                        <outlet property="lbDolar" destination="Mad-OH-Vj9" id="vFz-kG-Cnp"/>
+                        <outlet property="lbIOF" destination="buB-sc-x3R" id="H3Y-OF-xQb"/>
+                        <outlet property="lbIOFDescription" destination="mpr-Ed-3VE" id="hJO-7F-SEA"/>
+                        <outlet property="lbReal" destination="Zti-Ua-zgv" id="gfe-uk-fHC"/>
+                        <outlet property="lbStateTax" destination="ybk-nJ-WUj" id="1ZI-0I-P1f"/>
+                        <outlet property="lbStateTaxDescription" destination="a0P-NP-EP0" id="EUn-wi-nrP"/>
+                        <outlet property="swCreditCard" destination="i78-cu-yRB" id="Gch-S8-ywE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZeV-jw-FUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
