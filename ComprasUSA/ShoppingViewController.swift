@@ -30,7 +30,10 @@ class ShoppingViewController: UIViewController {
     }
     
     func setAmmount() {
-        tc.dolar = Double(tfDolar.text!)!
+        tc.shoppingValue = tc.convertToDouble(tfDolar.text!)
+        lbReal.text = tc.getFormattedValue(of: tc.shoppingValue * tc.dolar, withCurrency: "R$ ")
+        let dolar = tc.getFormattedValue(of: tc.dolar, withCurrency: "")
+        lbRealDescription.text = "Valor sem impostos (dólar \(dolar))"
     }
 
 

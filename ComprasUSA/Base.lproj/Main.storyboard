@@ -122,6 +122,9 @@
                                                 <color key="textColor" red="0.67450980392156867" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Mmz-Y0-MNl" id="2N4-Sw-b0R"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -140,6 +143,9 @@
                                                 <color key="textColor" red="0.0" green="0.50980392156862742" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Mmz-Y0-MNl" id="ROM-mD-I32"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -158,6 +164,9 @@
                                                 <color key="textColor" red="0.0" green="0.023529411764705882" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Mmz-Y0-MNl" id="PM3-XN-lD2"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -228,6 +237,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i78-cu-yRB">
                                         <rect key="frame" x="321" y="108" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeIOF:" destination="kgA-dQ-6d3" eventType="valueChanged" id="V5X-pp-t6r"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compra no cartão?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-t5-UiS">
                                         <rect key="frame" x="20" y="113" width="143.66666666666666" height="21"/>

@@ -15,6 +15,8 @@ class TaxesCalculator {
     var stateTax: Double = 7.0
     var shoppingValue: Double = 0
     
+    var formatter = NumberFormatter()
+    
     var shoppigValueInReal: Double {
         return shoppingValue * dolar
     }
@@ -32,10 +34,22 @@ class TaxesCalculator {
         if usingCreditCard {
             finalValue += iofValue
         }
-        return finalValue
+        return finalValue * dolar
+    }
+    
+    func convertToDouble(_ string: String) -> Double {
+        formatter.numberStyle = .none
+        return formatter.number(from: string)!.doubleValue
+    }
+    
+    func getFormattedValue(of value: Double, withCurrency currency: String) -> String {
+        formatter.numberStyle = .currency
+        formatter.currencySymbol = currency
+        formatter.alwaysShowsDecimalSeparator = true
+        return formatter.string(for: value)!
     }
     
     private init() {
-        
+        formatter.usesGroupingSeparator = true
     }
 }
